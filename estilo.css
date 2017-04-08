@@ -1,48 +1,118 @@
 /* Importa o arquivo CSS que importa a fonte Ravie */
 @import "fonts/ravie.css";
 
-body{
-	background: #fff, alpha 20%;
+#cabecalho {
+  margin-left: 154px;
+  padding-right: 90px;
 }
 
-header h1{
-	font-family: Ravie;
-	size: 36px;
-	color: #e90c0c;
+#recipiente {
+  position: relative;
+  background: linear-gradient(to bottom, #f6f1b2, #4599b2);
+  width: 800px;
+  margin: auto;
 }
 
-header h2{
-	font-family: Trebuchet;
-	size: 24px;
-	color: #333;
+#rodape {
+  position: relative;
+  bottom: 25px;
+  left: 690px;
+  height: 105px;
+  top: 45px;
 }
 
-main{
-	position: relative;
+#cabecalho h1 {
+  font-size: 36px;
+  color: #e90c0c;
+  font-family: 'Ravie', fantasy;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
 }
 
-aside{
-	position: relative;
-	box-sizing: border-box;
-	width: 154px;
-	float: left;
+#cabecalho h2 {
+  font-size: 24px;
+  float: right;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #333;
+  margin-bottom: 5px;
 }
 
-aside h2{
-	transform: rotate(270deg);
-	font-size: 48px;
-	font-family: Verdana;
-	color: #333;
-	font-weight: bold;
-
-}
-aside img{
-	display: block;
+#cabecalho h2 span{
+  color: #d027aa;
 }
 
-#siri{
-	top: 7px;
+#ticket {
+  position: fixed;
+  top: 295px;
+  left: -69px;
+  transition: left 100ms ease-out;
 }
 
+#ticket:hover {
+  left: 0px;
+}
 
+#lateral {
+  width: 154px;
+  box-sizing: content-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
 
+#cardapio {
+  width: 646px;
+  border: 1px solid #aac0ae;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2);
+  margin-left: 154px;
+  font-family: Verdana, sans-serif;
+  color: #333;
+  font-size: 14px;
+  clear: both;
+  padding: 10px 10px 30px 10px;
+}
+
+#cardapio h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#cardapio  span.preco{
+  float: right;
+}
+
+#lateral h2 {
+  font-size: 48px;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Verdana', sans-serif;
+  transform: rotate(-90deg);
+}
+
+#siri {
+  position: absolute;
+  top: 7px;
+  left: -10px;
+}
+
+#cardapio-vertical {
+  position: absolute;
+  left: -42px;
+  top: 210px;
+}
+
+#bolhas {
+  position: absolute;
+  bottom: 125px;
+  left: 42px;
+}
+
+#peixe {
+  position: absolute;
+  bottom: 0px;
+  left: -44px;
+}
